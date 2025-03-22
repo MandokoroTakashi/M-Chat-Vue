@@ -1,9 +1,11 @@
 <template>
+  <div class="main">
     <div class="chat-window">
       <MessageList :messages="messages" />
       <ChatInput @message-sent="fetchMessages" />
     </div>
-  </template>
+  </div>
+</template>
   
   <script>
   import { ref, onMounted } from "vue";
@@ -36,6 +38,13 @@
   </script>
   
   <style scoped>
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
   .chat-window {
     display: flex;
     flex-direction: column;
