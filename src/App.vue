@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ChatWindow from "./components/ChatWindow.vue";
+import ChatWindow from "./components/pages/Chat/ChatWindow.vue";
 import ChatHeader from "./components/parts/ChatHeader.vue";
 import ChatFooter from "./components/parts/ChatFooter.vue";
 
@@ -20,6 +20,8 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style>
+ body {
+  margin: 0;
+ }
 </style>
