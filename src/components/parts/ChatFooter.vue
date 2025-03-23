@@ -16,8 +16,6 @@
     background-color: #333;
     color: white;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
     width: 100%;
   }
   </style>

@@ -42,13 +42,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 300px;
+    flex: 1;
     background-color: #f4f4f4;
   }
+
   .chat-window {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 400px;
+    max-width: 80%;
   }
   </style>
   
