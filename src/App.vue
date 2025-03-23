@@ -1,19 +1,17 @@
 <template>
   <div id="app">
     <ChatHeader />
-    <ChatWindow />
+    <router-view />
     <ChatFooter />
   </div>
 </template>
 
 <script>
-import ChatWindow from "./components/pages/Chat/ChatWindow.vue";
 import ChatHeader from "./components/parts/ChatHeader.vue";
 import ChatFooter from "./components/parts/ChatFooter.vue";
 
 export default {
   components: {
-    ChatWindow,
     ChatHeader,
     ChatFooter,
   },

@@ -3,11 +3,11 @@
     <h1 class="logo">M-Chat</h1>
     <nav>
       <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chat</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/chat">Chat</router-link></li>
+        <li><router-link to="/register">Register</router-link></li>
       </ul>
-    </nav>
+</nav>
   </header>
 </template>
 
