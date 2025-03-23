@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <ChatHeader />
-    <router-view />
+    <div class="main">
+      <router-view />
+    </div>
     <ChatFooter />
   </div>
 </template>
@@ -29,4 +31,13 @@ export default {
   height: 100%;
   flex-direction: column;
  }
+
+ .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    flex: 1;
+    background-color: #f4f4f4;
+}
 </style>

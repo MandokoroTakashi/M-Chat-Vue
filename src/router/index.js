@@ -1,8 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';  // 修正: VueRouter -> createRouter
+import { createRouter, createWebHistory } from 'vue-router';
+import HomePage from '../views/HomePage.vue'
 import ChatPage from '../views/ChatPage.vue';
 import RegisterPage from '../views/RegisterPage.vue';
 
 const routes = [
+  { path: '/', component: HomePage },
   { path: '/chat', component: ChatPage },
   { path: '/register', component: RegisterPage }
 ];

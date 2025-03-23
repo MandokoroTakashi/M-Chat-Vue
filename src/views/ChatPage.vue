@@ -1,9 +1,7 @@
 <template>
-    <div class="main">
-        <div class="chat-window">
+    <div class="chat-window">
         <MessageList :messages="messages" />
         <ChatInput @message-sent="fetchMessages" />
-        </div>
     </div>
 </template>
 
@@ -39,15 +37,6 @@ export default {
 </script>
 
 <style scoped>
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-    flex: 1;
-    background-color: #f4f4f4;
-}
-
 .chat-window {
     display: flex;
     flex-direction: column;
